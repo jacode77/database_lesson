@@ -1,0 +1,5 @@
+<ul>
+    <%@books.each do |book|%>
+        <li><%=book.title%> - <%=book.author.full_name%> - <%=book.author.age%> years old</li>
+    <% end %>
+</ul>
