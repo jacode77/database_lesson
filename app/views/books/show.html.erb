@@ -1,0 +1,10 @@
+<h1> <%=@book.title%> </h1>
+<h2> <%=@book.author.full_name%> </h2>
+<h3> Genres </h3>
+<ul>
+    <%@book.genres.each do |genre|%>
+    <li><%=genre.name%></li>
+    <%end%>
+</ul>
+
+<p><%=@book.description%></p>
